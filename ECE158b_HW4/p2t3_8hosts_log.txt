@@ -1,0 +1,990 @@
+parallels@parallels-vm:~/mininet/custom$ sudo python mycustom.py
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 h3 h4 h5 h6 h7 h8 
+*** Adding switches:
+s1 
+*** Adding links:
+(0ms delay 0% loss) (0ms delay 0% loss) (h1, s1) (0ms delay 0% loss) (0ms delay 0% loss) (h2, s1) (0ms delay 0% loss) (0ms delay 0% loss) (h3, s1) (0ms delay 0% loss) (0ms delay 0% loss) (h4, s1) (0ms delay 0% loss) (0ms delay 0% loss) (h5, s1) (0ms delay 0% loss) (0ms delay 0% loss) (h6, s1) (0ms delay 0% loss) (0ms delay 0% loss) (h7, s1) (0ms delay 0% loss) (0ms delay 0% loss) (h8, s1) 
+*** Configuring hosts
+h1 (cfs 12500/100000us) h2 (cfs 12500/100000us) h3 (cfs 12500/100000us) h4 (cfs 12500/100000us) h5 (cfs 12500/100000us) h6 (cfs 12500/100000us) h7 (cfs 12500/100000us) h8 (cfs 12500/100000us) 
+###############Single Switch Topo###############
+Testing single switch topo:
+*** Starting controller
+c0 
+*** Starting 1 switches
+s1 ...(0ms delay 0% loss) (0ms delay 0% loss) (0ms delay 0% loss) (0ms delay 0% loss) (0ms delay 0% loss) (0ms delay 0% loss) (0ms delay 0% loss) (0ms delay 0% loss) 
+Dumping host connections
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s1-eth2
+h3 h3-eth0:s1-eth3
+h4 h4-eth0:s1-eth4
+h5 h5-eth0:s1-eth5
+h6 h6-eth0:s1-eth6
+h7 h7-eth0:s1-eth7
+h8 h8-eth0:s1-eth8
+Testing network connectivity
+*** Ping: testing ping reachability
+h1 -> h2 h3 h4 h5 h6 h7 h8 
+h2 -> h1 h3 h4 h5 h6 h7 h8 
+h3 -> h1 h2 h4 h5 h6 h7 h8 
+h4 -> h1 h2 h3 h5 h6 h7 h8 
+h5 -> h1 h2 h3 h4 h6 h7 h8 
+h6 -> h1 h2 h3 h4 h5 h7 h8 
+h7 -> h1 h2 h3 h4 h5 h6 h8 
+h8 -> h1 h2 h3 h4 h5 h6 h7 
+*** Results: 0% dropped (56/56 received)
+Ping between hosts:
+h1->h2
+RRT: 1.30796432495ms
+h1->h3
+RRT: 76.9350528717ms
+h1->h4
+RRT: 2.84099578857ms
+h1->h5
+RRT: 3.06797027588ms
+h1->h6
+RRT: 3.00192832947ms
+h1->h7
+RRT: 92.9498672485ms
+h1->h8
+RRT: 1.97100639343ms
+h2->h1
+RRT: 1.39594078064ms
+h2->h3
+RRT: 94.0110683441ms
+h2->h4
+RRT: 1.98817253113ms
+h2->h5
+RRT: 1.71208381653ms
+h2->h6
+RRT: 1.46889686584ms
+h2->h7
+RRT: 1.21283531189ms
+h2->h8
+RRT: 1.33490562439ms
+h3->h1
+RRT: 1.33800506592ms
+h3->h2
+RRT: 90.1000499725ms
+h3->h4
+RRT: 3.00598144531ms
+h3->h5
+RRT: 3.1590461731ms
+h3->h6
+RRT: 2.69412994385ms
+h3->h7
+RRT: 89.0500545502ms
+h3->h8
+RRT: 3.02195549011ms
+h4->h1
+RRT: 96.6329574585ms
+h4->h2
+RRT: 3.13591957092ms
+h4->h3
+RRT: 2.98190116882ms
+h4->h5
+RRT: 3.04388999939ms
+h4->h6
+RRT: 4.66084480286ms
+h4->h7
+RRT: 88.4659290314ms
+h4->h8
+RRT: 3.09705734253ms
+h5->h1
+RRT: 3.03411483765ms
+h5->h2
+RRT: 94.0229892731ms
+h5->h3
+RRT: 2.91514396667ms
+h5->h4
+RRT: 3.23891639709ms
+h5->h6
+RRT: 2.8760433197ms
+h5->h7
+RRT: 88.310956955ms
+h5->h8
+RRT: 3.24201583862ms
+h6->h1
+RRT: 96.2269306183ms
+h6->h2
+RRT: 3.13210487366ms
+h6->h3
+RRT: 2.62999534607ms
+h6->h4
+RRT: 1.90091133118ms
+h6->h5
+RRT: 1.55282020569ms
+h6->h7
+RRT: 1.91402435303ms
+h6->h8
+RRT: 1.70993804932ms
+h7->h1
+RRT: 1.23310089111ms
+h7->h2
+RRT: 87.7130031586ms
+h7->h3
+RRT: 3.01313400269ms
+h7->h4
+RRT: 3.05199623108ms
+h7->h5
+RRT: 3.05914878845ms
+h7->h6
+RRT: 88.495016098ms
+h7->h8
+RRT: 3.24201583862ms
+h8->h1
+RRT: 2.88105010986ms
+h8->h2
+RRT: 96.1179733276ms
+h8->h3
+RRT: 2.9399394989ms
+h8->h4
+RRT: 2.89392471313ms
+h8->h5
+RRT: 2.91800498962ms
+h8->h6
+RRT: 88.1588459015ms
+h8->h7
+RRT: 3.19600105286ms
+Testing bandwidth between every pair of hosts:
+Toal host number: 8
+*** Iperf: testing TCP bandwidth between h1 and h2 
+*** Results: ['3.50 Gbits/sec', '3.50 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h3 
+*** Results: ['3.41 Gbits/sec', '3.47 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h4 
+*** Results: ['3.33 Gbits/sec', '3.33 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h5 
+*** Results: ['3.46 Gbits/sec', '3.52 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h6 
+.*** Results: ['3.71 Gbits/sec', '3.71 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h7 
+*** Results: ['3.40 Gbits/sec', '3.41 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h8 
+*** Results: ['3.67 Gbits/sec', '3.74 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h3 
+*** Results: ['3.50 Gbits/sec', '3.51 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h4 
+*** Results: ['3.30 Gbits/sec', '3.31 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h5 
+*** Results: ['3.49 Gbits/sec', '3.49 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h6 
+*** Results: ['3.49 Gbits/sec', '3.50 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h7 
+*** Results: ['3.43 Gbits/sec', '3.43 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h8 
+*** Results: ['3.45 Gbits/sec', '3.46 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h4 
+*** Results: ['3.57 Gbits/sec', '3.64 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h5 
+*** Results: ['3.56 Gbits/sec', '3.56 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h6 
+*** Results: ['3.48 Gbits/sec', '3.48 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h7 
+.*** Results: ['3.46 Gbits/sec', '3.46 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h8 
+.*** Results: ['3.30 Gbits/sec', '3.31 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h5 
+*** Results: ['3.44 Gbits/sec', '3.49 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h6 
+*** Results: ['3.45 Gbits/sec', '3.46 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h7 
+*** Results: ['3.35 Gbits/sec', '3.36 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h8 
+*** Results: ['3.19 Gbits/sec', '3.20 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h6 
+*** Results: ['3.56 Gbits/sec', '3.56 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h7 
+*** Results: ['3.38 Gbits/sec', '3.39 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h8 
+*** Results: ['3.63 Gbits/sec', '3.64 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h7 
+*** Results: ['3.39 Gbits/sec', '3.40 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h8 
+*** Results: ['3.34 Gbits/sec', '3.40 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h8 
+*** Results: ['3.44 Gbits/sec', '3.45 Gbits/sec']
+*** Stopping 1 controllers
+c0 
+*** Stopping 8 links
+........
+*** Stopping 1 switches
+s1 
+*** Stopping 8 hosts
+h1 h2 h3 h4 h5 h6 h7 h8 
+*** Done
+*** Removing excess controllers/ofprotocols/ofdatapaths/pings/noxes
+killall controller ofprotocol ofdatapath ping nox_core lt-nox_core ovs-openflowd ovs-controller udpbwtest mnexec ivs 2> /dev/null
+killall -9 controller ofprotocol ofdatapath ping nox_core lt-nox_core ovs-openflowd ovs-controller udpbwtest mnexec ivs 2> /dev/null
+pkill -9 -f "sudo mnexec"
+*** Removing junk from /tmp
+rm -f /tmp/vconn* /tmp/vlogs* /tmp/*.out /tmp/*.log
+*** Removing old X11 tunnels
+*** Removing excess kernel datapaths
+ps ax | egrep -o 'dp[0-9]+' | sed 's/dp/nl:/'
+***  Removing OVS datapaths
+ovs-vsctl --timeout=1 list-br
+ovs-vsctl --timeout=1 list-br
+*** Removing all links of the pattern foo-ethX
+ip link show | egrep -o '([-_.[:alnum:]]+-eth[[:digit:]]+)'
+ip link show
+*** Killing stale mininet node processes
+pkill -9 -f mininet:
+*** Shutting down stale tunnels
+pkill -9 -f Tunnel=Ethernet
+pkill -9 -f .ssh/mn
+rm -f ~/.ssh/mn/*
+*** Cleanup complete.
+
+#################Linear Topo#####################
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 h3 h4 h5 h6 h7 h8 
+*** Adding switches:
+s1 s2 s3 s4 s5 s6 s7 s8 
+*** Adding links:
+(h1, s1) (h2, s2) (h3, s3) (h4, s4) (h5, s5) (h6, s6) (h7, s7) (h8, s8) (s2, s1) (s3, s2) (s4, s3) (s5, s4) (s6, s5) (s7, s6) (s8, s7) 
+*** Configuring hosts
+h1 (cfs -1/100000us) h2 (cfs -1/100000us) h3 (cfs -1/100000us) h4 (cfs -1/100000us) h5 (cfs -1/100000us) h6 (cfs -1/100000us) h7 (cfs -1/100000us) h8 (cfs -1/100000us) 
+Testing linear topo:
+*** Starting controller
+c0 
+*** Starting 8 switches
+s1 s2 s3 s4 s5 s6 s7 s8 ...
+Dumping host connections
+h1 h1-eth0:s1-eth1
+h2 h2-eth0:s2-eth1
+h3 h3-eth0:s3-eth1
+h4 h4-eth0:s4-eth1
+h5 h5-eth0:s5-eth1
+h6 h6-eth0:s6-eth1
+h7 h7-eth0:s7-eth1
+h8 h8-eth0:s8-eth1
+Testing network connectivity
+*** Ping: testing ping reachability
+h1 -> h2 h3 h4 h5 h6 h7 h8 
+h2 -> h1 h3 h4 h5 h6 h7 h8 
+h3 -> h1 h2 h4 h5 h6 h7 h8 
+h4 -> h1 h2 h3 h5 h6 h7 h8 
+h5 -> h1 h2 h3 h4 h6 h7 h8 
+h6 -> h1 h2 h3 h4 h5 h7 h8 
+h7 -> h1 h2 h3 h4 h5 h6 h8 
+h8 -> h1 h2 h3 h4 h5 h6 h7 
+*** Results: 0% dropped (56/56 received)
+Ping between hosts:
+RRT: 1.2149810791ms
+RRT: 1.1670589447ms
+RRT: 1.21998786926ms
+RRT: 1.13606452942ms
+RRT: 1.2469291687ms
+RRT: 1.29985809326ms
+RRT: 1.17301940918ms
+RRT: 2.12788581848ms
+RRT: 1.54209136963ms
+RRT: 1.74403190613ms
+RRT: 1.75809860229ms
+RRT: 1.39689445496ms
+RRT: 1.22690200806ms
+RRT: 1.14393234253ms
+RRT: 1.40309333801ms
+RRT: 2.16293334961ms
+RRT: 1.3701915741ms
+RRT: 1.22499465942ms
+RRT: 1.14488601685ms
+RRT: 1.13201141357ms
+RRT: 1.38211250305ms
+RRT: 1.25408172607ms
+RRT: 2.05183029175ms
+RRT: 1.49703025818ms
+RRT: 1.0941028595ms
+RRT: 1.32298469543ms
+RRT: 1.23286247253ms
+RRT: 1.05905532837ms
+RRT: 1.2321472168ms
+RRT: 2.30693817139ms
+RRT: 1.73711776733ms
+RRT: 1.76787376404ms
+RRT: 1.84416770935ms
+RRT: 1.72305107117ms
+RRT: 1.13606452942ms
+RRT: 1.1420249939ms
+RRT: 1.55401229858ms
+RRT: 2.79808044434ms
+RRT: 1.59692764282ms
+RRT: 1.23405456543ms
+RRT: 1.16991996765ms
+RRT: 1.36280059814ms
+RRT: 1.40786170959ms
+RRT: 2.09498405457ms
+RRT: 1.70803070068ms
+RRT: 1.17611885071ms
+RRT: 1.09219551086ms
+RRT: 1.4979839325ms
+RRT: 1.24597549438ms
+RRT: 1.49607658386ms
+RRT: 1.14107131958ms
+RRT: 1.20878219604ms
+RRT: 3.05390357971ms
+RRT: 1.41191482544ms
+RRT: 2.74991989136ms
+RRT: 2.19202041626ms
+Testing bw between every pair of hosts:
+Total host number: 8
+*** Iperf: testing TCP bandwidth between h1 and h2 
+*** Results: ['47.2 Gbits/sec', '47.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h3 
+*** Results: ['46.4 Gbits/sec', '46.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h4 
+*** Results: ['43.9 Gbits/sec', '44.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h5 
+*** Results: ['41.8 Gbits/sec', '41.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h6 
+*** Results: ['40.6 Gbits/sec', '40.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h7 
+*** Results: ['38.0 Gbits/sec', '38.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h8 
+*** Results: ['36.0 Gbits/sec', '36.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h3 
+*** Results: ['47.3 Gbits/sec', '47.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h4 
+*** Results: ['44.6 Gbits/sec', '44.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h5 
+*** Results: ['43.2 Gbits/sec', '43.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h6 
+*** Results: ['39.5 Gbits/sec', '39.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h7 
+*** Results: ['36.8 Gbits/sec', '36.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h8 
+*** Results: ['33.7 Gbits/sec', '33.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h4 
+*** Results: ['45.8 Gbits/sec', '45.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h5 
+*** Results: ['43.4 Gbits/sec', '43.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h6 
+*** Results: ['40.5 Gbits/sec', '40.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h7 
+*** Results: ['39.5 Gbits/sec', '39.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h8 
+*** Results: ['37.8 Gbits/sec', '37.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h5 
+.*** Results: ['46.3 Gbits/sec', '46.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h6 
+*** Results: ['43.8 Gbits/sec', '43.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h7 
+*** Results: ['41.4 Gbits/sec', '41.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h8 
+*** Results: ['36.4 Gbits/sec', '36.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h6 
+*** Results: ['45.0 Gbits/sec', '45.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h7 
+*** Results: ['42.5 Gbits/sec', '42.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h8 
+*** Results: ['38.0 Gbits/sec', '38.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h7 
+*** Results: ['43.5 Gbits/sec', '43.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h8 
+*** Results: ['41.0 Gbits/sec', '41.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h8 
+*** Results: ['43.9 Gbits/sec', '44.0 Gbits/sec']
+*** Stopping 1 controllers
+c0 
+*** Stopping 15 links
+...............
+*** Stopping 8 switches
+s1 s2 s3 s4 s5 s6 s7 s8 
+*** Stopping 8 hosts
+h1 h2 h3 h4 h5 h6 h7 h8 
+*** Done
+*** Removing excess controllers/ofprotocols/ofdatapaths/pings/noxes
+killall controller ofprotocol ofdatapath ping nox_core lt-nox_core ovs-openflowd ovs-controller udpbwtest mnexec ivs 2> /dev/null
+killall -9 controller ofprotocol ofdatapath ping nox_core lt-nox_core ovs-openflowd ovs-controller udpbwtest mnexec ivs 2> /dev/null
+pkill -9 -f "sudo mnexec"
+*** Removing junk from /tmp
+rm -f /tmp/vconn* /tmp/vlogs* /tmp/*.out /tmp/*.log
+*** Removing old X11 tunnels
+*** Removing excess kernel datapaths
+ps ax | egrep -o 'dp[0-9]+' | sed 's/dp/nl:/'
+***  Removing OVS datapaths
+ovs-vsctl --timeout=1 list-br
+ovs-vsctl --timeout=1 list-br
+*** Removing all links of the pattern foo-ethX
+ip link show | egrep -o '([-_.[:alnum:]]+-eth[[:digit:]]+)'
+ip link show
+*** Killing stale mininet node processes
+pkill -9 -f mininet:
+*** Shutting down stale tunnels
+pkill -9 -f Tunnel=Ethernet
+pkill -9 -f .ssh/mn
+rm -f ~/.ssh/mn/*
+*** Cleanup complete.
+
+#################Tree Topo#######################
+*** Creating network
+*** Adding controller
+*** Adding hosts:
+h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+*** Adding switches:
+s1 s2 s3 s4 s5 
+*** Adding links:
+(s1, s2) (s1, s3) (s1, s4) (s1, s5) (s2, h1) (s2, h2) (s2, h3) (s2, h4) (s3, h5) (s3, h6) (s3, h7) (s3, h8) (s4, h9) (s4, h10) (s4, h11) (s4, h12) (s5, h13) (s5, h14) (s5, h15) (s5, h16) 
+*** Configuring hosts
+h1 (cfs -1/100000us) h2 (cfs -1/100000us) h3 (cfs -1/100000us) h4 (cfs -1/100000us) h5 (cfs -1/100000us) h6 (cfs -1/100000us) h7 (cfs -1/100000us) h8 (cfs -1/100000us) h9 (cfs -1/100000us) h10 (cfs -1/100000us) h11 (cfs -1/100000us) h12 (cfs -1/100000us) h13 (cfs -1/100000us) h14 (cfs -1/100000us) h15 (cfs -1/100000us) h16 (cfs -1/100000us) 
+Testing tree topo:
+*** Starting controller
+c0 
+*** Starting 5 switches
+s1 s2 s3 s4 s5 ...
+Dumping host connections
+h1 h1-eth0:s2-eth1
+h2 h2-eth0:s2-eth2
+h3 h3-eth0:s2-eth3
+h4 h4-eth0:s2-eth4
+h5 h5-eth0:s3-eth1
+h6 h6-eth0:s3-eth2
+h7 h7-eth0:s3-eth3
+h8 h8-eth0:s3-eth4
+h9 h9-eth0:s4-eth1
+h10 h10-eth0:s4-eth2
+h11 h11-eth0:s4-eth3
+h12 h12-eth0:s4-eth4
+h13 h13-eth0:s5-eth1
+h14 h14-eth0:s5-eth2
+h15 h15-eth0:s5-eth3
+h16 h16-eth0:s5-eth4
+Testing network connectivity
+*** Ping: testing ping reachability
+h1 -> h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+h2 -> h1 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+h3 -> h1 h2 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+h4 -> h1 h2 h3 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+h5 -> h1 h2 h3 h4 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+h6 -> h1 h2 h3 h4 h5 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+h7 -> h1 h2 h3 h4 h5 h6 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+h8 -> h1 h2 h3 h4 h5 h6 h7 h9 h10 h11 h12 h13 h14 h15 h16 
+h9 -> h1 h2 h3 h4 h5 h6 h7 h8 h10 h11 h12 h13 h14 h15 h16 
+h10 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 h11 h12 h13 h14 h15 h16 
+h11 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h12 h13 h14 h15 h16 
+h12 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h13 h14 h15 h16 
+h13 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h14 h15 h16 
+h14 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h15 h16 
+h15 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h16 
+h16 -> h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 
+*** Results: 0% dropped (240/240 received)
+Ping between hosts:
+RRT: 1.37305259705ms
+RRT: 1.24621391296ms
+RRT: 1.18803977966ms
+RRT: 1.35612487793ms
+RRT: 1.67489051819ms
+RRT: 1.3599395752ms
+RRT: 1.48606300354ms
+RRT: 1.24502182007ms
+RRT: 1.58619880676ms
+RRT: 1.25217437744ms
+RRT: 1.16896629333ms
+RRT: 1.21998786926ms
+RRT: 1.2321472168ms
+RRT: 1.28698348999ms
+RRT: 1.31607055664ms
+RRT: 1.33895874023ms
+RRT: 1.33800506592ms
+RRT: 4.38690185547ms
+RRT: 1.44410133362ms
+RRT: 2.03084945679ms
+RRT: 1.84011459351ms
+RRT: 1.20306015015ms
+RRT: 1.34706497192ms
+RRT: 1.76405906677ms
+RRT: 1.64794921875ms
+RRT: 1.44290924072ms
+RRT: 1.30105018616ms
+RRT: 1.42908096313ms
+RRT: 1.19185447693ms
+RRT: 1.10578536987ms
+RRT: 1.23000144958ms
+RRT: 1.21378898621ms
+RRT: 1.89685821533ms
+RRT: 1.24788284302ms
+RRT: 1.21903419495ms
+RRT: 1.7421245575ms
+RRT: 1.64699554443ms
+RRT: 1.34515762329ms
+RRT: 1.60312652588ms
+RRT: 2.43711471558ms
+RRT: 2.10905075073ms
+RRT: 1.17015838623ms
+RRT: 1.1739730835ms
+RRT: 2.45785713196ms
+RRT: 1.28817558289ms
+RRT: 1.26099586487ms
+RRT: 1.39689445496ms
+RRT: 1.58214569092ms
+RRT: 2.17795372009ms
+RRT: 1.95693969727ms
+RRT: 1.99007987976ms
+RRT: 1.24907493591ms
+RRT: 1.2149810791ms
+RRT: 1.15203857422ms
+RRT: 1.11603736877ms
+RRT: 1.19709968567ms
+RRT: 2.24494934082ms
+RRT: 1.78480148315ms
+RRT: 1.49202346802ms
+RRT: 3.37505340576ms
+RRT: 1.46412849426ms
+RRT: 1.28793716431ms
+RRT: 1.25694274902ms
+RRT: 1.15919113159ms
+RRT: 1.43194198608ms
+RRT: 2.41088867188ms
+RRT: 2.03108787537ms
+RRT: 1.61099433899ms
+RRT: 1.4488697052ms
+RRT: 1.26886367798ms
+RRT: 1.11389160156ms
+RRT: 1.16086006165ms
+RRT: 1.23691558838ms
+RRT: 1.20306015015ms
+RRT: 1.17206573486ms
+RRT: 1.25789642334ms
+RRT: 1.24096870422ms
+RRT: 1.81984901428ms
+RRT: 1.53207778931ms
+RRT: 1.49488449097ms
+RRT: 1.23906135559ms
+RRT: 1.50084495544ms
+RRT: 2.06208229065ms
+RRT: 1.45602226257ms
+RRT: 1.1830329895ms
+RRT: 1.15299224854ms
+RRT: 1.17182731628ms
+RRT: 1.36089324951ms
+RRT: 1.67179107666ms
+RRT: 1.65200233459ms
+RRT: 1.57809257507ms
+RRT: 1.3689994812ms
+RRT: 1.42908096313ms
+RRT: 1.16395950317ms
+RRT: 1.26194953918ms
+RRT: 1.1739730835ms
+RRT: 1.14178657532ms
+RRT: 1.14488601685ms
+RRT: 1.18708610535ms
+RRT: 1.21307373047ms
+RRT: 1.19709968567ms
+RRT: 1.61504745483ms
+RRT: 1.82318687439ms
+RRT: 1.62100791931ms
+RRT: 1.61385536194ms
+RRT: 2.5749206543ms
+RRT: 1.49297714233ms
+RRT: 1.21688842773ms
+RRT: 1.17683410645ms
+RRT: 1.17087364197ms
+RRT: 1.4910697937ms
+RRT: 2.23398208618ms
+RRT: 2.10094451904ms
+RRT: 1.53207778931ms
+RRT: 1.53994560242ms
+RRT: 1.23596191406ms
+RRT: 1.18899345398ms
+RRT: 1.21903419495ms
+RRT: 1.15895271301ms
+RRT: 1.22904777527ms
+RRT: 1.15180015564ms
+RRT: 1.15299224854ms
+RRT: 1.1260509491ms
+RRT: 1.36113166809ms
+RRT: 1.87683105469ms
+RRT: 1.34301185608ms
+RRT: 1.40404701233ms
+RRT: 1.44696235657ms
+RRT: 3.23605537415ms
+RRT: 1.35397911072ms
+RRT: 1.305103302ms
+RRT: 1.19209289551ms
+RRT: 1.61576271057ms
+RRT: 1.78194046021ms
+RRT: 1.67608261108ms
+RRT: 1.51705741882ms
+RRT: 1.15990638733ms
+RRT: 1.38878822327ms
+RRT: 1.1260509491ms
+RRT: 1.16109848022ms
+RRT: 1.11413002014ms
+RRT: 1.14393234253ms
+RRT: 1.13391876221ms
+RRT: 1.17111206055ms
+RRT: 1.26194953918ms
+RRT: 2.23708152771ms
+RRT: 1.89995765686ms
+RRT: 1.69992446899ms
+RRT: 1.40380859375ms
+RRT: 1.4750957489ms
+RRT: 3.09991836548ms
+RRT: 1.19996070862ms
+RRT: 1.16109848022ms
+RRT: 1.16181373596ms
+RRT: 1.48892402649ms
+RRT: 2.42280960083ms
+RRT: 1.65891647339ms
+RRT: 1.50394439697ms
+RRT: 1.21021270752ms
+RRT: 1.2629032135ms
+RRT: 1.12414360046ms
+RRT: 1.19996070862ms
+RRT: 1.09791755676ms
+RRT: 1.10697746277ms
+RRT: 1.1568069458ms
+RRT: 1.34015083313ms
+RRT: 2.11811065674ms
+RRT: 1.99604034424ms
+RRT: 1.70707702637ms
+RRT: 1.90997123718ms
+RRT: 1.64484977722ms
+RRT: 4.27985191345ms
+RRT: 1.27387046814ms
+RRT: 1.18494033813ms
+RRT: 1.93691253662ms
+RRT: 1.99007987976ms
+RRT: 1.60098075867ms
+RRT: 1.54209136963ms
+RRT: 1.52397155762ms
+RRT: 1.22618675232ms
+RRT: 1.20115280151ms
+RRT: 1.15513801575ms
+RRT: 1.22117996216ms
+RRT: 1.19304656982ms
+RRT: 1.3439655304ms
+RRT: 1.37996673584ms
+RRT: 2.05302238464ms
+RRT: 2.41494178772ms
+RRT: 1.58405303955ms
+RRT: 1.47700309753ms
+RRT: 1.45506858826ms
+RRT: 1.4820098877ms
+RRT: 2.07209587097ms
+RRT: 1.31893157959ms
+RRT: 1.30796432495ms
+RRT: 1.34181976318ms
+RRT: 1.6930103302ms
+RRT: 1.38592720032ms
+RRT: 1.47986412048ms
+RRT: 2.04110145569ms
+RRT: 1.53088569641ms
+RRT: 1.39594078064ms
+RRT: 1.13201141357ms
+RRT: 1.14297866821ms
+RRT: 1.1899471283ms
+RRT: 1.1899471283ms
+RRT: 1.1579990387ms
+RRT: 1.18088722229ms
+RRT: 1.36399269104ms
+RRT: 1.93309783936ms
+RRT: 1.42502784729ms
+RRT: 1.46198272705ms
+RRT: 1.25098228455ms
+RRT: 2.67314910889ms
+RRT: 3.22008132935ms
+RRT: 1.37400627136ms
+RRT: 1.37209892273ms
+RRT: 1.88517570496ms
+RRT: 2.02703475952ms
+RRT: 1.82795524597ms
+RRT: 1.62196159363ms
+RRT: 1.42002105713ms
+RRT: 1.18803977966ms
+RRT: 1.20401382446ms
+RRT: 1.1248588562ms
+RRT: 1.17897987366ms
+RRT: 1.13701820374ms
+RRT: 1.1990070343ms
+RRT: 1.1351108551ms
+RRT: 2.24781036377ms
+RRT: 1.96886062622ms
+RRT: 1.41310691833ms
+RRT: 1.61004066467ms
+RRT: 1.33395195007ms
+RRT: 1.13105773926ms
+RRT: 1.09004974365ms
+RRT: 4.01377677917ms
+RRT: 1.45196914673ms
+RRT: 2.01797485352ms
+RRT: 2.08520889282ms
+Testing bw between every pair of hosts:
+Total host number: 16
+*** Iperf: testing TCP bandwidth between h1 and h2 
+*** Results: ['43.8 Gbits/sec', '43.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h3 
+*** Results: ['50.2 Gbits/sec', '50.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h4 
+*** Results: ['50.8 Gbits/sec', '50.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h5 
+*** Results: ['45.5 Gbits/sec', '45.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h6 
+*** Results: ['44.6 Gbits/sec', '44.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h7 
+*** Results: ['42.7 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h8 
+*** Results: ['44.2 Gbits/sec', '44.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h9 
+*** Results: ['43.1 Gbits/sec', '43.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h10 
+*** Results: ['43.1 Gbits/sec', '43.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h11 
+*** Results: ['44.1 Gbits/sec', '44.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h12 
+*** Results: ['38.2 Gbits/sec', '38.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h13 
+*** Results: ['43.3 Gbits/sec', '43.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h14 
+*** Results: ['42.1 Gbits/sec', '42.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h15 
+*** Results: ['42.7 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h1 and h16 
+*** Results: ['44.2 Gbits/sec', '44.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h3 
+*** Results: ['49.8 Gbits/sec', '49.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h4 
+*** Results: ['49.6 Gbits/sec', '49.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h5 
+*** Results: ['44.3 Gbits/sec', '44.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h6 
+*** Results: ['45.0 Gbits/sec', '45.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h7 
+*** Results: ['43.8 Gbits/sec', '43.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h8 
+*** Results: ['43.2 Gbits/sec', '43.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h9 
+*** Results: ['43.1 Gbits/sec', '43.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h10 
+*** Results: ['42.1 Gbits/sec', '42.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h11 
+*** Results: ['42.9 Gbits/sec', '42.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h12 
+*** Results: ['42.6 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h13 
+*** Results: ['42.7 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h14 
+*** Results: ['42.9 Gbits/sec', '43.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h15 
+*** Results: ['43.0 Gbits/sec', '43.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h2 and h16 
+*** Results: ['42.0 Gbits/sec', '42.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h4 
+*** Results: ['49.6 Gbits/sec', '49.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h5 
+*** Results: ['43.5 Gbits/sec', '43.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h6 
+*** Results: ['42.8 Gbits/sec', '42.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h7 
+*** Results: ['43.6 Gbits/sec', '43.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h8 
+*** Results: ['44.3 Gbits/sec', '44.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h9 
+*** Results: ['44.6 Gbits/sec', '44.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h10 
+*** Results: ['44.0 Gbits/sec', '44.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h11 
+*** Results: ['43.7 Gbits/sec', '43.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h12 
+*** Results: ['43.4 Gbits/sec', '43.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h13 
+*** Results: ['43.1 Gbits/sec', '43.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h14 
+*** Results: ['43.8 Gbits/sec', '43.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h15 
+*** Results: ['43.5 Gbits/sec', '43.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h3 and h16 
+*** Results: ['43.6 Gbits/sec', '43.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h5 
+*** Results: ['42.1 Gbits/sec', '42.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h6 
+*** Results: ['44.5 Gbits/sec', '44.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h7 
+*** Results: ['44.4 Gbits/sec', '44.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h8 
+*** Results: ['43.2 Gbits/sec', '43.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h9 
+*** Results: ['43.6 Gbits/sec', '43.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h10 
+*** Results: ['43.0 Gbits/sec', '43.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h11 
+*** Results: ['43.7 Gbits/sec', '43.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h12 
+*** Results: ['44.4 Gbits/sec', '44.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h13 
+*** Results: ['43.1 Gbits/sec', '43.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h14 
+*** Results: ['41.2 Gbits/sec', '41.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h15 
+*** Results: ['38.1 Gbits/sec', '38.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h4 and h16 
+*** Results: ['38.6 Gbits/sec', '38.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h6 
+*** Results: ['46.2 Gbits/sec', '46.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h7 
+*** Results: ['45.6 Gbits/sec', '45.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h8 
+*** Results: ['46.8 Gbits/sec', '46.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h9 
+*** Results: ['39.0 Gbits/sec', '39.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h10 
+*** Results: ['38.7 Gbits/sec', '38.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h11 
+*** Results: ['41.6 Gbits/sec', '41.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h12 
+*** Results: ['42.1 Gbits/sec', '42.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h13 
+*** Results: ['42.7 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h14 
+*** Results: ['41.4 Gbits/sec', '41.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h15 
+*** Results: ['39.9 Gbits/sec', '39.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h5 and h16 
+*** Results: ['41.7 Gbits/sec', '41.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h7 
+*** Results: ['48.9 Gbits/sec', '48.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h8 
+*** Results: ['48.1 Gbits/sec', '48.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h9 
+*** Results: ['41.4 Gbits/sec', '41.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h10 
+*** Results: ['40.9 Gbits/sec', '40.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h11 
+*** Results: ['41.9 Gbits/sec', '41.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h12 
+*** Results: ['42.3 Gbits/sec', '42.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h13 
+*** Results: ['42.9 Gbits/sec', '42.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h14 
+*** Results: ['42.6 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h15 
+*** Results: ['40.7 Gbits/sec', '40.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h6 and h16 
+*** Results: ['42.2 Gbits/sec', '42.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h8 
+*** Results: ['47.5 Gbits/sec', '47.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h9 
+*** Results: ['41.8 Gbits/sec', '41.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h10 
+*** Results: ['40.9 Gbits/sec', '40.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h11 
+*** Results: ['42.0 Gbits/sec', '42.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h12 
+*** Results: ['41.0 Gbits/sec', '41.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h13 
+*** Results: ['41.9 Gbits/sec', '41.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h14 
+*** Results: ['41.9 Gbits/sec', '42.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h15 
+*** Results: ['41.4 Gbits/sec', '41.4 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h7 and h16 
+*** Results: ['41.8 Gbits/sec', '41.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h9 
+*** Results: ['39.6 Gbits/sec', '39.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h10 
+*** Results: ['40.9 Gbits/sec', '41.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h11 
+*** Results: ['42.3 Gbits/sec', '42.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h12 
+*** Results: ['40.7 Gbits/sec', '40.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h13 
+*** Results: ['41.0 Gbits/sec', '41.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h14 
+*** Results: ['39.7 Gbits/sec', '39.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h15 
+*** Results: ['39.9 Gbits/sec', '39.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h8 and h16 
+*** Results: ['42.0 Gbits/sec', '42.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h9 and h10 
+*** Results: ['46.2 Gbits/sec', '46.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h9 and h11 
+*** Results: ['47.6 Gbits/sec', '47.6 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h9 and h12 
+*** Results: ['48.3 Gbits/sec', '48.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h9 and h13 
+*** Results: ['41.2 Gbits/sec', '41.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h9 and h14 
+*** Results: ['38.7 Gbits/sec', '38.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h9 and h15 
+*** Results: ['40.3 Gbits/sec', '40.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h9 and h16 
+*** Results: ['41.4 Gbits/sec', '41.5 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h10 and h11 
+*** Results: ['48.1 Gbits/sec', '48.2 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h10 and h12 
+.*** Results: ['44.8 Gbits/sec', '44.8 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h10 and h13 
+*** Results: ['40.1 Gbits/sec', '40.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h10 and h14 
+*** Results: ['42.9 Gbits/sec', '42.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h10 and h15 
+*** Results: ['40.0 Gbits/sec', '40.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h10 and h16 
+*** Results: ['42.0 Gbits/sec', '42.1 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h11 and h12 
+*** Results: ['47.7 Gbits/sec', '47.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h11 and h13 
+*** Results: ['41.6 Gbits/sec', '41.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h11 and h14 
+*** Results: ['39.7 Gbits/sec', '39.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h11 and h15 
+*** Results: ['38.9 Gbits/sec', '38.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h11 and h16 
+*** Results: ['39.2 Gbits/sec', '39.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h12 and h13 
+*** Results: ['35.7 Gbits/sec', '35.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h12 and h14 
+*** Results: ['36.8 Gbits/sec', '36.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h12 and h15 
+*** Results: ['31.2 Gbits/sec', '31.3 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h12 and h16 
+*** Results: ['34.9 Gbits/sec', '35.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h13 and h14 
+*** Results: ['45.0 Gbits/sec', '45.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h13 and h15 
+*** Results: ['45.8 Gbits/sec', '45.9 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h13 and h16 
+*** Results: ['42.7 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h14 and h15 
+*** Results: ['42.7 Gbits/sec', '42.7 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h14 and h16 
+*** Results: ['43.0 Gbits/sec', '43.0 Gbits/sec']
+*** Iperf: testing TCP bandwidth between h15 and h16 
+*** Results: ['43.2 Gbits/sec', '43.2 Gbits/sec']
+*** Stopping 1 controllers
+c0 
+*** Stopping 20 links
+....................
+*** Stopping 5 switches
+s1 s2 s3 s4 s5 
+*** Stopping 16 hosts
+h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12 h13 h14 h15 h16 
+*** Done
+*** Removing excess controllers/ofprotocols/ofdatapaths/pings/noxes
+killall controller ofprotocol ofdatapath ping nox_core lt-nox_core ovs-openflowd ovs-controller udpbwtest mnexec ivs 2> /dev/null
+killall -9 controller ofprotocol ofdatapath ping nox_core lt-nox_core ovs-openflowd ovs-controller udpbwtest mnexec ivs 2> /dev/null
+pkill -9 -f "sudo mnexec"
+*** Removing junk from /tmp
+rm -f /tmp/vconn* /tmp/vlogs* /tmp/*.out /tmp/*.log
+*** Removing old X11 tunnels
+*** Removing excess kernel datapaths
+ps ax | egrep -o 'dp[0-9]+' | sed 's/dp/nl:/'
+***  Removing OVS datapaths
+ovs-vsctl --timeout=1 list-br
+ovs-vsctl --timeout=1 list-br
+*** Removing all links of the pattern foo-ethX
+ip link show | egrep -o '([-_.[:alnum:]]+-eth[[:digit:]]+)'
+ip link show
+*** Killing stale mininet node processes
+pkill -9 -f mininet:
+*** Shutting down stale tunnels
+pkill -9 -f Tunnel=Ethernet
+pkill -9 -f .ssh/mn
+rm -f ~/.ssh/mn/*
+*** Cleanup complete.
+Finished.
